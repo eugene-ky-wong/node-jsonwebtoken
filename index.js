@@ -1,12 +1,12 @@
 module.exports = {
-  verify: require('./verify'),
-  sign: require('./sign'),
-  JsonWebTokenError: require('./lib/JsonWebTokenError'),
-  NotBeforeError: require('./lib/NotBeforeError'),
-  TokenExpiredError: require('./lib/TokenExpiredError'),
+  verify: require('./verify.js'),
+  sign: require('./sign.js'),
+  JsonWebTokenError: require('./lib/JsonWebTokenError.js'),
+  NotBeforeError: require('./lib/NotBeforeError.js'),
+  TokenExpiredError: require('./lib/TokenExpiredError.js'),
 };
 
 Object.defineProperty(module.exports, 'decode', {
   enumerable: false,
-  value: require('./decode'),
+  value: require('./decode.js'),
 });
